@@ -37,7 +37,7 @@ npx gh-pages -d dist
 ## How it works
 
 - `src/App.jsx` holds search/detail state (React hooks) and talks to OMDb.
-- `src/components/` — `SearchBar`, `KeyBanner`, `ResultsSection`, `MovieCard`, `DetailModal`.
+- `src/components/` - `SearchBar`, `KeyBanner`, `ResultsSection`, `MovieCard`, `DetailModal`.
 - Search hits `GET https://www.omdbapi.com/?apikey=...&s=<term>&type=<type>&page=<n>`.
 - Clicking a result hits `GET https://www.omdbapi.com/?apikey=...&i=<imdbID>&plot=full`.
-- The API key lives only in `localStorage` on the visitor's own browser — it is never bundled into the code or committed to the repo.
+- The API key lives only in `localStorage` on the visitor's own browser - it is never bundled into the code or committed to the repo.
