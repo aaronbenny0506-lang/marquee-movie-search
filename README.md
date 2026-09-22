@@ -1,8 +1,8 @@
 # Marquee : a film search library
 
-A React single-page movie/series search app built on the [OMDb API](https://www.omdbapi.com/). Search by title, filter by type (movie / series / episode), browse results as a poster grid, and open a title for full details (plot, cast, director, rating, runtime).
+A React single-page movie/series search app built on the [OMDb API](https://www.omdbapi.com/). Search by title, filter by type (movie / series / episode), browse results as a poster grid and open a title for full details (plot, cast, director, rating, runtime).
 
-Built with [Vite](https://vitejs.dev/) + React — no backend, just static files after `npm run build`.
+Built with [Vite](https://vitejs.dev/) + React - no backend, just static files after `npm run build`.
 
 ## Run it locally
 
@@ -34,13 +34,6 @@ npm run build
 npx gh-pages -d dist
 ```
 
-Then in the repo on GitHub: **Settings → Pages → Deploy from a branch → gh-pages / (root)**. GitHub gives you a live URL a minute or two later, typically:
-
-```
-https://<your-username>.github.io/<your-repo>/
-```
-
-That's the link to share.
 
 ## How it works
 
@@ -49,7 +42,3 @@ That's the link to share.
 - Search hits `GET https://www.omdbapi.com/?apikey=...&s=<term>&type=<type>&page=<n>`.
 - Clicking a result hits `GET https://www.omdbapi.com/?apikey=...&i=<imdbID>&plot=full`.
 - The API key lives only in `localStorage` on the visitor's own browser — it is never bundled into the code or committed to the repo.
-
-## Credits
-
-Movie data and posters via the [OMDb API](https://www.omdbapi.com/). Not affiliated with IMDb.
