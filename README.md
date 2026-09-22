@@ -9,7 +9,6 @@ Built with [Vite](https://vitejs.dev/) + React - no backend, just static files a
 ```bash
 npm install
 npm run dev
-# then visit the local URL Vite prints (usually http://localhost:5173)
 ```
 
 ## Get an OMDb API key
